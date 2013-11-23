@@ -1,0 +1,3 @@
+[submodule "BTCTicker/external/SocketRocket"]
+	path = BTCTicker/external/SocketRocket
+	url = git@github.com:square/SocketRocket.git

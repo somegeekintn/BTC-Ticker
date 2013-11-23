@@ -14,24 +14,55 @@
 		C9862D351840FD5700811FC2 /* QSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D341840FD5700811FC2 /* QSAppDelegate.m */; };
 		C9862D381840FD5700811FC2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9862D361840FD5700811FC2 /* MainMenu.xib */; };
 		C9862D3A1840FD5700811FC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9862D391840FD5700811FC2 /* Images.xcassets */; };
-		C9862D411840FD5700811FC2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9862D401840FD5700811FC2 /* XCTest.framework */; };
-		C9862D421840FD5700811FC2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9862D211840FD5700811FC2 /* Cocoa.framework */; };
-		C9862D4A1840FD5700811FC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9862D481840FD5700811FC2 /* InfoPlist.strings */; };
-		C9862D4C1840FD5700811FC2 /* BTCTickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D4B1840FD5700811FC2 /* BTCTickerTests.m */; };
+		C9862D671840FE4000811FC2 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9862D601840FE2000811FC2 /* SocketRocket.framework */; };
+		C9862D6E1841026A00811FC2 /* QSBTCMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D6D1841026A00811FC2 /* QSBTCMonitor.m */; };
+		C9862D711841032D00811FC2 /* QSBTCConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D701841032D00811FC2 /* QSBTCConsts.m */; };
+		C9862D74184108F000811FC2 /* QSBTCTicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D73184108F000811FC2 /* QSBTCTicker.m */; };
+		C9862D771841090600811FC2 /* QSBTCTickerValue.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D761841090600811FC2 /* QSBTCTickerValue.m */; };
+		C9862D7E184129B200811FC2 /* QSBTCTickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D7D184129B200811FC2 /* QSBTCTickerController.m */; };
+		C9862D8E18415F5900811FC2 /* QSBTCBkgView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D8D18415F5900811FC2 /* QSBTCBkgView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C9862D431840FD5700811FC2 /* PBXContainerItemProxy */ = {
+		C9862D5D1840FE2000811FC2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C9862D161840FD5700811FC2 /* Project object */;
+			containerPortal = C9862D561840FE2000811FC2 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B2082D1450F597009315AF;
+			remoteInfo = SocketRocket;
+		};
+		C9862D5F1840FE2000811FC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9862D561840FE2000811FC2 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F668C880153E91210044DBAC;
+			remoteInfo = SocketRocketOSX;
+		};
+		C9862D611840FE2000811FC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9862D561840FE2000811FC2 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6BDA802145900D200FE3253;
+			remoteInfo = SRWebSocketTests;
+		};
+		C9862D631840FE2000811FC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9862D561840FE2000811FC2 /* SocketRocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F62417E314D52F3C003CE997;
+			remoteInfo = TestChat;
+		};
+		C9862D651840FE2B00811FC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9862D561840FE2000811FC2 /* SocketRocket.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = C9862D1D1840FD5700811FC2;
-			remoteInfo = BTCTicker;
+			remoteGlobalIDString = F668C87F153E91210044DBAC;
+			remoteInfo = SocketRocketOSX;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C9862D1E1840FD5700811FC2 /* BTCTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTCTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9862D1E1840FD5700811FC2 /* BTC Ticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BTC Ticker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9862D211840FD5700811FC2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C9862D241840FD5700811FC2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		C9862D251840FD5700811FC2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -45,11 +76,20 @@
 		C9862D341840FD5700811FC2 /* QSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSAppDelegate.m; sourceTree = "<group>"; };
 		C9862D371840FD5700811FC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C9862D391840FD5700811FC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C9862D3F1840FD5700811FC2 /* BTCTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTCTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9862D401840FD5700811FC2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C9862D471840FD5700811FC2 /* BTCTickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTCTickerTests-Info.plist"; sourceTree = "<group>"; };
-		C9862D491840FD5700811FC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C9862D4B1840FD5700811FC2 /* BTCTickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTCTickerTests.m; sourceTree = "<group>"; };
+		C9862D561840FE2000811FC2 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
+		C9862D6C1841026A00811FC2 /* QSBTCMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCMonitor.h; sourceTree = "<group>"; };
+		C9862D6D1841026A00811FC2 /* QSBTCMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCMonitor.m; sourceTree = "<group>"; };
+		C9862D6F1841032D00811FC2 /* QSBTCConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCConsts.h; sourceTree = "<group>"; };
+		C9862D701841032D00811FC2 /* QSBTCConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCConsts.m; sourceTree = "<group>"; };
+		C9862D72184108F000811FC2 /* QSBTCTicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCTicker.h; sourceTree = "<group>"; };
+		C9862D73184108F000811FC2 /* QSBTCTicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCTicker.m; sourceTree = "<group>"; };
+		C9862D751841090600811FC2 /* QSBTCTickerValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCTickerValue.h; sourceTree = "<group>"; };
+		C9862D761841090600811FC2 /* QSBTCTickerValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCTickerValue.m; sourceTree = "<group>"; };
+		C9862D7C184129B200811FC2 /* QSBTCTickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCTickerController.h; sourceTree = "<group>"; };
+		C9862D7D184129B200811FC2 /* QSBTCTickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCTickerController.m; sourceTree = "<group>"; };
+		C9862D8C18415F5900811FC2 /* QSBTCBkgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCBkgView.h; sourceTree = "<group>"; };
+		C9862D8D18415F5900811FC2 /* QSBTCBkgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCBkgView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9862D221840FD5700811FC2 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9862D3C1840FD5700811FC2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9862D421840FD5700811FC2 /* Cocoa.framework in Frameworks */,
-				C9862D411840FD5700811FC2 /* XCTest.framework in Frameworks */,
+				C9862D671840FE4000811FC2 /* SocketRocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				C9862D271840FD5700811FC2 /* BTCTicker */,
-				C9862D451840FD5700811FC2 /* BTCTickerTests */,
+				C9862D551840FDFE00811FC2 /* External */,
 				C9862D201840FD5700811FC2 /* Frameworks */,
 				C9862D1F1840FD5700811FC2 /* Products */,
 			);
@@ -86,8 +118,7 @@
 		C9862D1F1840FD5700811FC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C9862D1E1840FD5700811FC2 /* BTCTicker.app */,
-				C9862D3F1840FD5700811FC2 /* BTCTickerTests.xctest */,
+				C9862D1E1840FD5700811FC2 /* BTC Ticker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,7 +150,12 @@
 				C9862D341840FD5700811FC2 /* QSAppDelegate.m */,
 				C9862D361840FD5700811FC2 /* MainMenu.xib */,
 				C9862D391840FD5700811FC2 /* Images.xcassets */,
+				C9862D781841290C00811FC2 /* Controllers */,
+				C9862D6B1841021C00811FC2 /* Model */,
 				C9862D281840FD5700811FC2 /* Supporting Files */,
+				C9862D891841566100811FC2 /* UI */,
+				C9862D6F1841032D00811FC2 /* QSBTCConsts.h */,
+				C9862D701841032D00811FC2 /* QSBTCConsts.m */,
 			);
 			path = BTCTicker;
 			sourceTree = "<group>";
@@ -136,22 +172,58 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C9862D451840FD5700811FC2 /* BTCTickerTests */ = {
+		C9862D551840FDFE00811FC2 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				C9862D4B1840FD5700811FC2 /* BTCTickerTests.m */,
-				C9862D461840FD5700811FC2 /* Supporting Files */,
+				C9862D561840FE2000811FC2 /* SocketRocket.xcodeproj */,
 			);
-			path = BTCTickerTests;
+			name = External;
+			path = BTCTicker/external;
 			sourceTree = "<group>";
 		};
-		C9862D461840FD5700811FC2 /* Supporting Files */ = {
+		C9862D571840FE2000811FC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C9862D471840FD5700811FC2 /* BTCTickerTests-Info.plist */,
-				C9862D481840FD5700811FC2 /* InfoPlist.strings */,
+				C9862D5E1840FE2000811FC2 /* libSocketRocket.a */,
+				C9862D601840FE2000811FC2 /* SocketRocket.framework */,
+				C9862D621840FE2000811FC2 /* SRWebSocketTests.octest */,
+				C9862D641840FE2000811FC2 /* TestChat.app */,
 			);
-			name = "Supporting Files";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9862D6B1841021C00811FC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9862D6C1841026A00811FC2 /* QSBTCMonitor.h */,
+				C9862D6D1841026A00811FC2 /* QSBTCMonitor.m */,
+				C9862D72184108F000811FC2 /* QSBTCTicker.h */,
+				C9862D73184108F000811FC2 /* QSBTCTicker.m */,
+				C9862D751841090600811FC2 /* QSBTCTickerValue.h */,
+				C9862D761841090600811FC2 /* QSBTCTickerValue.m */,
+			);
+			name = Model;
+			path = models;
+			sourceTree = "<group>";
+		};
+		C9862D781841290C00811FC2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9862D7C184129B200811FC2 /* QSBTCTickerController.h */,
+				C9862D7D184129B200811FC2 /* QSBTCTickerController.m */,
+			);
+			name = Controllers;
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		C9862D891841566100811FC2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C9862D8C18415F5900811FC2 /* QSBTCBkgView.h */,
+				C9862D8D18415F5900811FC2 /* QSBTCBkgView.m */,
+			);
+			name = UI;
+			path = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,29 +240,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				C9862D661840FE2B00811FC2 /* PBXTargetDependency */,
 			);
 			name = BTCTicker;
 			productName = BTCTicker;
-			productReference = C9862D1E1840FD5700811FC2 /* BTCTicker.app */;
+			productReference = C9862D1E1840FD5700811FC2 /* BTC Ticker.app */;
 			productType = "com.apple.product-type.application";
-		};
-		C9862D3E1840FD5700811FC2 /* BTCTickerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C9862D521840FD5700811FC2 /* Build configuration list for PBXNativeTarget "BTCTickerTests" */;
-			buildPhases = (
-				C9862D3B1840FD5700811FC2 /* Sources */,
-				C9862D3C1840FD5700811FC2 /* Frameworks */,
-				C9862D3D1840FD5700811FC2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C9862D441840FD5700811FC2 /* PBXTargetDependency */,
-			);
-			name = BTCTickerTests;
-			productName = BTCTickerTests;
-			productReference = C9862D3F1840FD5700811FC2 /* BTCTickerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -201,11 +256,6 @@
 				CLASSPREFIX = QS;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Quiet Spark";
-				TargetAttributes = {
-					C9862D3E1840FD5700811FC2 = {
-						TestTargetID = C9862D1D1840FD5700811FC2;
-					};
-				};
 			};
 			buildConfigurationList = C9862D191840FD5700811FC2 /* Build configuration list for PBXProject "BTCTicker" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -218,13 +268,49 @@
 			mainGroup = C9862D151840FD5700811FC2;
 			productRefGroup = C9862D1F1840FD5700811FC2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C9862D571840FE2000811FC2 /* Products */;
+					ProjectRef = C9862D561840FE2000811FC2 /* SocketRocket.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C9862D1D1840FD5700811FC2 /* BTCTicker */,
-				C9862D3E1840FD5700811FC2 /* BTCTickerTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C9862D5E1840FE2000811FC2 /* libSocketRocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSocketRocket.a;
+			remoteRef = C9862D5D1840FE2000811FC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9862D601840FE2000811FC2 /* SocketRocket.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SocketRocket.framework;
+			remoteRef = C9862D5F1840FE2000811FC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9862D621840FE2000811FC2 /* SRWebSocketTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SRWebSocketTests.octest;
+			remoteRef = C9862D611840FE2000811FC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C9862D641840FE2000811FC2 /* TestChat.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TestChat.app;
+			remoteRef = C9862D631840FE2000811FC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C9862D1C1840FD5700811FC2 /* Resources */ = {
@@ -238,14 +324,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9862D3D1840FD5700811FC2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9862D4A1840FD5700811FC2 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -253,26 +331,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9862D6E1841026A00811FC2 /* QSBTCMonitor.m in Sources */,
+				C9862D771841090600811FC2 /* QSBTCTickerValue.m in Sources */,
+				C9862D74184108F000811FC2 /* QSBTCTicker.m in Sources */,
 				C9862D351840FD5700811FC2 /* QSAppDelegate.m in Sources */,
 				C9862D2E1840FD5700811FC2 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9862D3B1840FD5700811FC2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9862D4C1840FD5700811FC2 /* BTCTickerTests.m in Sources */,
+				C9862D8E18415F5900811FC2 /* QSBTCBkgView.m in Sources */,
+				C9862D7E184129B200811FC2 /* QSBTCTickerController.m in Sources */,
+				C9862D711841032D00811FC2 /* QSBTCConsts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C9862D441840FD5700811FC2 /* PBXTargetDependency */ = {
+		C9862D661840FE2B00811FC2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C9862D1D1840FD5700811FC2 /* BTCTicker */;
-			targetProxy = C9862D431840FD5700811FC2 /* PBXContainerItemProxy */;
+			name = SocketRocketOSX;
+			targetProxy = C9862D651840FE2B00811FC2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -299,14 +375,6 @@
 				C9862D371840FD5700811FC2 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		C9862D481840FD5700811FC2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9862D491840FD5700811FC2 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -388,7 +456,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BTCTicker/BTCTicker-Prefix.pch";
 				INFOPLIST_FILE = "BTCTicker/BTCTicker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "BTC Ticker";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -401,48 +469,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BTCTicker/BTCTicker-Prefix.pch";
 				INFOPLIST_FILE = "BTCTicker/BTCTicker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "BTC Ticker";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		C9862D531840FD5700811FC2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BTCTicker.app/Contents/MacOS/BTCTicker";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BTCTicker/BTCTicker-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "BTCTickerTests/BTCTickerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		C9862D541840FD5700811FC2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BTCTicker.app/Contents/MacOS/BTCTicker";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BTCTicker/BTCTicker-Prefix.pch";
-				INFOPLIST_FILE = "BTCTickerTests/BTCTickerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -465,14 +493,7 @@
 				C9862D511840FD5700811FC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		C9862D521840FD5700811FC2 /* Build configuration list for PBXNativeTarget "BTCTickerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9862D531840FD5700811FC2 /* Debug */,
-				C9862D541840FD5700811FC2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

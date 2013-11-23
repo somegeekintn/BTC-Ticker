@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class QSBTCTickerController;
+
 @interface QSAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSWindow				*window;
+@property (assign) IBOutlet QSBTCTickerController	*controller;
 
 @end
