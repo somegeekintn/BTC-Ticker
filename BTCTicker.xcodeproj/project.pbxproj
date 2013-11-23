@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C957805C184166B0007988A5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C957805B184166B0007988A5 /* README.md */; };
 		C9862D221840FD5700811FC2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9862D211840FD5700811FC2 /* Cocoa.framework */; };
 		C9862D2C1840FD5700811FC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9862D2A1840FD5700811FC2 /* InfoPlist.strings */; };
 		C9862D2E1840FD5700811FC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D2D1840FD5700811FC2 /* main.m */; };
@@ -62,6 +63,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C957805B184166B0007988A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		C9862D1E1840FD5700811FC2 /* BTC Ticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BTC Ticker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9862D211840FD5700811FC2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C9862D241840FD5700811FC2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -108,6 +110,7 @@
 		C9862D151840FD5700811FC2 = {
 			isa = PBXGroup;
 			children = (
+				C957805B184166B0007988A5 /* README.md */,
 				C9862D271840FD5700811FC2 /* BTCTicker */,
 				C9862D551840FDFE00811FC2 /* External */,
 				C9862D201840FD5700811FC2 /* Frameworks */,
@@ -319,6 +322,7 @@
 			files = (
 				C9862D2C1840FD5700811FC2 /* InfoPlist.strings in Resources */,
 				C9862D3A1840FD5700811FC2 /* Images.xcassets in Resources */,
+				C957805C184166B0007988A5 /* README.md in Resources */,
 				C9862D321840FD5700811FC2 /* Credits.rtf in Resources */,
 				C9862D381840FD5700811FC2 /* MainMenu.xib in Resources */,
 			);
