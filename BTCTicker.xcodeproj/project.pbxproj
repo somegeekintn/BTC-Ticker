@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9862D221840FD5700811FC2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9862D211840FD5700811FC2 /* Cocoa.framework */; };
+		C9862D2C1840FD5700811FC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9862D2A1840FD5700811FC2 /* InfoPlist.strings */; };
+		C9862D2E1840FD5700811FC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D2D1840FD5700811FC2 /* main.m */; };
+		C9862D321840FD5700811FC2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C9862D301840FD5700811FC2 /* Credits.rtf */; };
+		C9862D351840FD5700811FC2 /* QSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D341840FD5700811FC2 /* QSAppDelegate.m */; };
+		C9862D381840FD5700811FC2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9862D361840FD5700811FC2 /* MainMenu.xib */; };
+		C9862D3A1840FD5700811FC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9862D391840FD5700811FC2 /* Images.xcassets */; };
+		C9862D411840FD5700811FC2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9862D401840FD5700811FC2 /* XCTest.framework */; };
+		C9862D421840FD5700811FC2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9862D211840FD5700811FC2 /* Cocoa.framework */; };
+		C9862D4A1840FD5700811FC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9862D481840FD5700811FC2 /* InfoPlist.strings */; };
+		C9862D4C1840FD5700811FC2 /* BTCTickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D4B1840FD5700811FC2 /* BTCTickerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9862D431840FD5700811FC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9862D161840FD5700811FC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9862D1D1840FD5700811FC2;
+			remoteInfo = BTCTicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9862D1E1840FD5700811FC2 /* BTCTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTCTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9862D211840FD5700811FC2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C9862D241840FD5700811FC2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C9862D251840FD5700811FC2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C9862D261840FD5700811FC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9862D291840FD5700811FC2 /* BTCTicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTCTicker-Info.plist"; sourceTree = "<group>"; };
+		C9862D2B1840FD5700811FC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9862D2D1840FD5700811FC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9862D2F1840FD5700811FC2 /* BTCTicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTCTicker-Prefix.pch"; sourceTree = "<group>"; };
+		C9862D311840FD5700811FC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C9862D331840FD5700811FC2 /* QSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSAppDelegate.h; sourceTree = "<group>"; };
+		C9862D341840FD5700811FC2 /* QSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSAppDelegate.m; sourceTree = "<group>"; };
+		C9862D371840FD5700811FC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C9862D391840FD5700811FC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C9862D3F1840FD5700811FC2 /* BTCTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTCTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9862D401840FD5700811FC2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C9862D471840FD5700811FC2 /* BTCTickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTCTickerTests-Info.plist"; sourceTree = "<group>"; };
+		C9862D491840FD5700811FC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9862D4B1840FD5700811FC2 /* BTCTickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTCTickerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9862D1B1840FD5700811FC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9862D221840FD5700811FC2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9862D3C1840FD5700811FC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9862D421840FD5700811FC2 /* Cocoa.framework in Frameworks */,
+				C9862D411840FD5700811FC2 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9862D151840FD5700811FC2 = {
+			isa = PBXGroup;
+			children = (
+				C9862D271840FD5700811FC2 /* BTCTicker */,
+				C9862D451840FD5700811FC2 /* BTCTickerTests */,
+				C9862D201840FD5700811FC2 /* Frameworks */,
+				C9862D1F1840FD5700811FC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9862D1F1840FD5700811FC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9862D1E1840FD5700811FC2 /* BTCTicker.app */,
+				C9862D3F1840FD5700811FC2 /* BTCTickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9862D201840FD5700811FC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9862D211840FD5700811FC2 /* Cocoa.framework */,
+				C9862D401840FD5700811FC2 /* XCTest.framework */,
+				C9862D231840FD5700811FC2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9862D231840FD5700811FC2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9862D241840FD5700811FC2 /* AppKit.framework */,
+				C9862D251840FD5700811FC2 /* CoreData.framework */,
+				C9862D261840FD5700811FC2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C9862D271840FD5700811FC2 /* BTCTicker */ = {
+			isa = PBXGroup;
+			children = (
+				C9862D331840FD5700811FC2 /* QSAppDelegate.h */,
+				C9862D341840FD5700811FC2 /* QSAppDelegate.m */,
+				C9862D361840FD5700811FC2 /* MainMenu.xib */,
+				C9862D391840FD5700811FC2 /* Images.xcassets */,
+				C9862D281840FD5700811FC2 /* Supporting Files */,
+			);
+			path = BTCTicker;
+			sourceTree = "<group>";
+		};
+		C9862D281840FD5700811FC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9862D291840FD5700811FC2 /* BTCTicker-Info.plist */,
+				C9862D2A1840FD5700811FC2 /* InfoPlist.strings */,
+				C9862D2D1840FD5700811FC2 /* main.m */,
+				C9862D2F1840FD5700811FC2 /* BTCTicker-Prefix.pch */,
+				C9862D301840FD5700811FC2 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9862D451840FD5700811FC2 /* BTCTickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9862D4B1840FD5700811FC2 /* BTCTickerTests.m */,
+				C9862D461840FD5700811FC2 /* Supporting Files */,
+			);
+			path = BTCTickerTests;
+			sourceTree = "<group>";
+		};
+		C9862D461840FD5700811FC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9862D471840FD5700811FC2 /* BTCTickerTests-Info.plist */,
+				C9862D481840FD5700811FC2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9862D1D1840FD5700811FC2 /* BTCTicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9862D4F1840FD5700811FC2 /* Build configuration list for PBXNativeTarget "BTCTicker" */;
+			buildPhases = (
+				C9862D1A1840FD5700811FC2 /* Sources */,
+				C9862D1B1840FD5700811FC2 /* Frameworks */,
+				C9862D1C1840FD5700811FC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTCTicker;
+			productName = BTCTicker;
+			productReference = C9862D1E1840FD5700811FC2 /* BTCTicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9862D3E1840FD5700811FC2 /* BTCTickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9862D521840FD5700811FC2 /* Build configuration list for PBXNativeTarget "BTCTickerTests" */;
+			buildPhases = (
+				C9862D3B1840FD5700811FC2 /* Sources */,
+				C9862D3C1840FD5700811FC2 /* Frameworks */,
+				C9862D3D1840FD5700811FC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9862D441840FD5700811FC2 /* PBXTargetDependency */,
+			);
+			name = BTCTickerTests;
+			productName = BTCTickerTests;
+			productReference = C9862D3F1840FD5700811FC2 /* BTCTickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9862D161840FD5700811FC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = QS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Quiet Spark";
+				TargetAttributes = {
+					C9862D3E1840FD5700811FC2 = {
+						TestTargetID = C9862D1D1840FD5700811FC2;
+					};
+				};
+			};
+			buildConfigurationList = C9862D191840FD5700811FC2 /* Build configuration list for PBXProject "BTCTicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9862D151840FD5700811FC2;
+			productRefGroup = C9862D1F1840FD5700811FC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9862D1D1840FD5700811FC2 /* BTCTicker */,
+				C9862D3E1840FD5700811FC2 /* BTCTickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9862D1C1840FD5700811FC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9862D2C1840FD5700811FC2 /* InfoPlist.strings in Resources */,
+				C9862D3A1840FD5700811FC2 /* Images.xcassets in Resources */,
+				C9862D321840FD5700811FC2 /* Credits.rtf in Resources */,
+				C9862D381840FD5700811FC2 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9862D3D1840FD5700811FC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9862D4A1840FD5700811FC2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9862D1A1840FD5700811FC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9862D351840FD5700811FC2 /* QSAppDelegate.m in Sources */,
+				C9862D2E1840FD5700811FC2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9862D3B1840FD5700811FC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9862D4C1840FD5700811FC2 /* BTCTickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9862D441840FD5700811FC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9862D1D1840FD5700811FC2 /* BTCTicker */;
+			targetProxy = C9862D431840FD5700811FC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9862D2A1840FD5700811FC2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9862D2B1840FD5700811FC2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9862D301840FD5700811FC2 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9862D311840FD5700811FC2 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C9862D361840FD5700811FC2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9862D371840FD5700811FC2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		C9862D481840FD5700811FC2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9862D491840FD5700811FC2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9862D4D1840FD5700811FC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C9862D4E1840FD5700811FC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C9862D501840FD5700811FC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTCTicker/BTCTicker-Prefix.pch";
+				INFOPLIST_FILE = "BTCTicker/BTCTicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9862D511840FD5700811FC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTCTicker/BTCTicker-Prefix.pch";
+				INFOPLIST_FILE = "BTCTicker/BTCTicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C9862D531840FD5700811FC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BTCTicker.app/Contents/MacOS/BTCTicker";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTCTicker/BTCTicker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BTCTickerTests/BTCTickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C9862D541840FD5700811FC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BTCTicker.app/Contents/MacOS/BTCTicker";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTCTicker/BTCTicker-Prefix.pch";
+				INFOPLIST_FILE = "BTCTickerTests/BTCTickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9862D191840FD5700811FC2 /* Build configuration list for PBXProject "BTCTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9862D4D1840FD5700811FC2 /* Debug */,
+				C9862D4E1840FD5700811FC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9862D4F1840FD5700811FC2 /* Build configuration list for PBXNativeTarget "BTCTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9862D501840FD5700811FC2 /* Debug */,
+				C9862D511840FD5700811FC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C9862D521840FD5700811FC2 /* Build configuration list for PBXNativeTarget "BTCTickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9862D531840FD5700811FC2 /* Debug */,
+				C9862D541840FD5700811FC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9862D161840FD5700811FC2 /* Project object */;
+}
