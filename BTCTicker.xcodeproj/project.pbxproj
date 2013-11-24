@@ -23,6 +23,7 @@
 		C9862D771841090600811FC2 /* QSBTCTickerValue.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D761841090600811FC2 /* QSBTCTickerValue.m */; };
 		C9862D7E184129B200811FC2 /* QSBTCTickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D7D184129B200811FC2 /* QSBTCTickerController.m */; };
 		C9862D8E18415F5900811FC2 /* QSBTCBkgView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D8D18415F5900811FC2 /* QSBTCBkgView.m */; };
+		C9CA71B718418856001E2D15 /* SocketRocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9862D601840FE2000811FC2 /* SocketRocket.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C9CA71B31841884B001E2D15 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C9CA71B718418856001E2D15 /* SocketRocket.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C957805B184166B0007988A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		C957805D184175E7007988A5 /* QSBTCStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCStatusView.h; sourceTree = "<group>"; };
@@ -81,7 +95,6 @@
 		C9862D341840FD5700811FC2 /* QSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSAppDelegate.m; sourceTree = "<group>"; };
 		C9862D371840FD5700811FC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C9862D391840FD5700811FC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C9862D401840FD5700811FC2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		C9862D561840FE2000811FC2 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
 		C9862D6C1841026A00811FC2 /* QSBTCMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCMonitor.h; sourceTree = "<group>"; };
 		C9862D6D1841026A00811FC2 /* QSBTCMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCMonitor.m; sourceTree = "<group>"; };
@@ -133,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				C9862D211840FD5700811FC2 /* Cocoa.framework */,
-				C9862D401840FD5700811FC2 /* XCTest.framework */,
 				C9862D231840FD5700811FC2 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -244,6 +256,7 @@
 				C9862D1A1840FD5700811FC2 /* Sources */,
 				C9862D1B1840FD5700811FC2 /* Frameworks */,
 				C9862D1C1840FD5700811FC2 /* Resources */,
+				C9CA71B31841884B001E2D15 /* CopyFiles */,
 			);
 			buildRules = (
 			);
