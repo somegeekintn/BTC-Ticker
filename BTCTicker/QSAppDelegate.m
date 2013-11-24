@@ -15,7 +15,7 @@
 - (void) applicationDidFinishLaunching: (NSNotification *) inNotification
 {
 	[QSBTCMonitor sharedMonitor].delegate = self.controller;
-	[[QSBTCMonitor sharedMonitor] begingMonitoring];
+	[[QSBTCMonitor sharedMonitor] beginMonitoring];
 }
 
 @end

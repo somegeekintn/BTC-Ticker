@@ -19,6 +19,7 @@
 @property (nonatomic, strong) SRWebSocket		*webSocket;
 @property (nonatomic, strong) NSArray			*messageTypes;
 @property (nonatomic, strong) QSBTCTicker		*ticker;
+@property (nonatomic, assign) NSInteger			connectionState;
 @property (nonatomic, assign) NSInteger			retryCount;
 
 @end
@@ -41,24 +42,44 @@
 - (id) init
 {
 	if ((self = [super init]) != nil) {
+		self.connectionState = eMonitorState_Disconnected;
 		self.messageTypes = @[QSBTCMessageType_Ticker, QSBTCMessageType_Trade, QSBTCMessageType_Depth];
 	}
 	
 	return self;
 }
 
-- (void) begingMonitoring
+- (void) toggleMonitor
 {
-	NSURLRequest		*webSocketRequest = [[NSURLRequest alloc] initWithURL: [NSURL URLWithString: QSBTC_TickerURL]];
+	if (self.connectionState == eMonitorState_Disconnected)
+		[self beginMonitoring];
+	else
+		[self endMonitoring];
+}
 
-	if (webSocketRequest != nil && webSocketRequest.URL != nil) {
-		self.webSocket = [[SRWebSocket alloc] initWithURLRequest: webSocketRequest];
-		self.webSocket.delegate = self;
-		
-		[self.webSocket open];
+- (void) beginMonitoring
+{
+	if (self.connectionState == eMonitorState_Disconnected) {
+		NSURLRequest		*webSocketRequest = [[NSURLRequest alloc] initWithURL: [NSURL URLWithString: QSBTC_TickerURL]];
+
+		if (webSocketRequest != nil && webSocketRequest.URL != nil) {
+			self.webSocket = [[SRWebSocket alloc] initWithURLRequest: webSocketRequest];
+			self.webSocket.delegate = self;
+			self.connectionState = eMonitorState_Connecting;
+			[self.webSocket open];
+		}
+		else {
+			NSLog(@"%s: failed to create request for %@", __PRETTY_FUNCTION__, QSBTC_TickerURL);
+		}
 	}
-	else {
-		NSLog(@"%s: failed to create request for %@", __PRETTY_FUNCTION__, QSBTC_TickerURL);
+}
+
+- (void) endMonitoring
+{
+	if (self.webSocket != nil) {
+		self.connectionState = eMonitorState_Disconnected;
+		[self.webSocket close];
+		self.webSocket = nil;
 	}
 }
 
@@ -94,16 +115,22 @@
 - (void) handleRawTrade: (NSDictionary *) inRawTrade
 {
 	if (self.ticker != nil) {
-		if ([self.ticker updateWithTradeResponse: inRawTrade]) {
-			if (self.delegate != nil && [self.delegate respondsToSelector: @selector(tickerDidUpdate:)]) {
-				[self.delegate tickerDidUpdate: self];
-			}
-		}
+		if ([self.ticker updateWithTradeResponse: inRawTrade])
+			[self notifyDelegateOfTickerUpdate];
 	}
 }
 
 - (void) handleRawDepth: (NSDictionary *) inRawDepth
 {
+}
+
+- (void) notifyDelegateOfTickerUpdate
+{
+	if (self.delegate != nil && [self.delegate respondsToSelector: @selector(monitor:didUpdateTicker:)]) {
+		dispatch_async(dispatch_get_main_queue(), ^{
+			[self.delegate monitor: self didUpdateTicker: self.ticker];
+		});
+	}
 }
 
 #pragma mark - SRWebSocketDelegate
@@ -125,17 +152,18 @@
 
 - (void) webSocketDidOpen: (SRWebSocket *) inWebSocket
 {
-NSLog(@"%s", __PRETTY_FUNCTION__);
 	self.retryCount = 0;
+	self.connectionState = eMonitorState_Connected;
 }
 
 - (void) webSocket: (SRWebSocket *) inWebSocket
 	didFailWithError: (NSError *) inError
 {
-NSLog(@"%s", __PRETTY_FUNCTION__);
 	self.retryCount++;
-	if (self.retryCount < kTickerRetryCount)
-		[self begingMonitoring];
+	if (self.retryCount < kTickerRetryCount) {
+		_connectionState = eMonitorState_Disconnected;
+		[self beginMonitoring];
+	}
 }
 
 - (void) webSocket: (SRWebSocket *) inWebSocket
@@ -153,8 +181,18 @@ NSLog(@"%s", __PRETTY_FUNCTION__);
 	[inTicker updateChangesFromTicker: self.ticker];
 	_ticker = inTicker;
 
-	if (self.delegate != nil && [self.delegate respondsToSelector: @selector(tickerDidUpdate:)]) {
-		[self.delegate tickerDidUpdate: self];
+	[self notifyDelegateOfTickerUpdate];
+}
+
+- (void) setConnectionState: (NSInteger) inConnectionState
+{
+	if (_connectionState != inConnectionState) {
+		_connectionState = inConnectionState;
+		if (self.delegate != nil && [self.delegate respondsToSelector: @selector(monitor:connectionDidChange:)]) {
+			dispatch_async(dispatch_get_main_queue(), ^{
+				[self.delegate monitor: self connectionDidChange: _connectionState];
+			});
+		}
 	}
 }
 

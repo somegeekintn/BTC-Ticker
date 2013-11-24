@@ -10,15 +10,19 @@
 #import "QSBTCTicker.h"
 #import "QSBTCTickerValue.h"
 #import "QSBTCMonitor.h"
+#import "QSBTCStatusView.h"
 
 @interface QSBTCTickerController ()
 
-@property (nonatomic, strong) NSDate				*lastUpdate;
-@property (nonatomic, strong) dispatch_source_t		statusUpdateSource;
-@property (nonatomic, weak) IBOutlet NSTextField	*lastPrice;
-@property (nonatomic, weak) IBOutlet NSTextField	*status;
-@property (nonatomic, weak) IBOutlet NSTextField	*buyPrice;
-@property (nonatomic, weak) IBOutlet NSTextField	*sellPrice;
+@property (nonatomic, strong) NSDate					*lastUpdate;
+@property (nonatomic, strong) dispatch_source_t			statusUpdateSource;
+@property (nonatomic, weak) IBOutlet NSTextField		*lastPrice;
+@property (nonatomic, weak) IBOutlet NSTextField		*btcVolume;
+@property (nonatomic, weak) IBOutlet NSTextField		*status;
+@property (nonatomic, weak) IBOutlet NSTextField		*buyPrice;
+@property (nonatomic, weak) IBOutlet NSTextField		*sellPrice;
+@property (nonatomic, weak) IBOutlet NSMenuItem			*connectItem;
+@property (nonatomic, weak) IBOutlet QSBTCStatusView	*statusView;
 
 @end
 
@@ -44,18 +48,42 @@
 	return changeColor;
 }
 
-- (void) tickerDidUpdate: (QSBTCMonitor *) inMonitor
+- (void) monitor: (QSBTCMonitor *) inMonitor
+	didUpdateTicker: (QSBTCTicker *) inTicker
 {
-	QSBTCTicker		*ticker = inMonitor.ticker;
+	[self.lastPrice setObjectValue: inTicker.last.value];
+	[self.lastPrice setTextColor: [self colorForValueChange: inTicker.last]];
+	[self.buyPrice setObjectValue: inTicker.buy.value];
+	[self.buyPrice setTextColor: [self colorForValueChange: inTicker.buy]];
+	[self.sellPrice setObjectValue: inTicker.sell.value];
+	[self.sellPrice setTextColor: [self colorForValueChange: inTicker.sell]];
+	[self.btcVolume setObjectValue: inTicker.volume.value];
 	
-	[self.lastPrice setObjectValue: ticker.last.value];
-	[self.lastPrice setTextColor: [self colorForValueChange: ticker.last]];
-	[self.buyPrice setObjectValue: ticker.buy.value];
-	[self.buyPrice setTextColor: [self colorForValueChange: ticker.buy]];
-	[self.sellPrice setObjectValue: ticker.sell.value];
-	[self.sellPrice setTextColor: [self colorForValueChange: ticker.sell]];
-	
-	self.lastUpdate = inMonitor.ticker.timestamp;
+	self.lastUpdate = inTicker.timestamp;
+}
+
+- (void) monitor: (QSBTCMonitor *) inMonitor
+	connectionDidChange: (NSInteger) inConnectionState
+{
+	self.statusView.status = inConnectionState;
+	[self.connectItem setTitle: inConnectionState == eMonitorState_Disconnected ? @"Connect" : @"Disconnect"];
+
+	switch (inConnectionState) {
+		case eMonitorState_Disconnected: {
+				dispatch_source_cancel(self.statusUpdateSource);
+				self.statusUpdateSource = nil;
+				[self.status setStringValue: @"disconnected"];
+			}
+			break;
+		
+		case eMonitorState_Connecting:
+			[self.status setStringValue: @"connecting…"];
+			break;
+			
+		case eMonitorState_Connected:
+			[self.status setStringValue: @"connected"];
+			break;
+	}
 }
 
 - (void) updateStatus
@@ -65,9 +93,13 @@
 		
 		[self.status setStringValue: [NSString stringWithFormat: @"updated: %2.2fs ago", secondsSinceUpdate]];
 	}
-	else {
-		[self.status setStringValue: @"connecting…"];	// possibly a lie...
-	}
+}
+
+#pragma mark - Handlers
+
+- (void) handleConnectionToggle: (id) inSender
+{
+	[[QSBTCMonitor sharedMonitor] toggleMonitor];
 }
 
 #pragma mark - Getters / Setters

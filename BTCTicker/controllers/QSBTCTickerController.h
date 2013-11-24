@@ -10,4 +10,6 @@
 
 @interface QSBTCTickerController : NSObject <QSBTCMonitorDelegate>
 
+- (IBAction)		handleConnectionToggle: (id) inSender;
+
 @end

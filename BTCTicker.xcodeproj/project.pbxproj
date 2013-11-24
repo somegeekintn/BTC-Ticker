@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C957805C184166B0007988A5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C957805B184166B0007988A5 /* README.md */; };
+		C957805F184175E7007988A5 /* QSBTCStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = C957805E184175E7007988A5 /* QSBTCStatusView.m */; };
 		C9862D221840FD5700811FC2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9862D211840FD5700811FC2 /* Cocoa.framework */; };
 		C9862D2C1840FD5700811FC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9862D2A1840FD5700811FC2 /* InfoPlist.strings */; };
 		C9862D2E1840FD5700811FC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D2D1840FD5700811FC2 /* main.m */; };
@@ -64,6 +65,8 @@
 
 /* Begin PBXFileReference section */
 		C957805B184166B0007988A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		C957805D184175E7007988A5 /* QSBTCStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCStatusView.h; sourceTree = "<group>"; };
+		C957805E184175E7007988A5 /* QSBTCStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCStatusView.m; sourceTree = "<group>"; };
 		C9862D1E1840FD5700811FC2 /* BTC Ticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BTC Ticker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9862D211840FD5700811FC2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C9862D241840FD5700811FC2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -224,6 +227,8 @@
 			children = (
 				C9862D8C18415F5900811FC2 /* QSBTCBkgView.h */,
 				C9862D8D18415F5900811FC2 /* QSBTCBkgView.m */,
+				C957805D184175E7007988A5 /* QSBTCStatusView.h */,
+				C957805E184175E7007988A5 /* QSBTCStatusView.m */,
 			);
 			name = UI;
 			path = ui;
@@ -338,6 +343,7 @@
 				C9862D6E1841026A00811FC2 /* QSBTCMonitor.m in Sources */,
 				C9862D771841090600811FC2 /* QSBTCTickerValue.m in Sources */,
 				C9862D74184108F000811FC2 /* QSBTCTicker.m in Sources */,
+				C957805F184175E7007988A5 /* QSBTCStatusView.m in Sources */,
 				C9862D351840FD5700811FC2 /* QSAppDelegate.m in Sources */,
 				C9862D2E1840FD5700811FC2 /* main.m in Sources */,
 				C9862D8E18415F5900811FC2 /* QSBTCBkgView.m in Sources */,

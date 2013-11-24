@@ -12,10 +12,18 @@
 @class QSBTCTicker;
 @class QSBTCMonitor;
 
+enum {
+	eMonitorState_Disconnected = 0,
+	eMonitorState_Connecting,
+	eMonitorState_Connected
+};
+
 @protocol QSBTCMonitorDelegate <NSObject>
 @optional
-
-- (void)		tickerDidUpdate: (QSBTCMonitor *) inMonitor;
+- (void)		monitor: (QSBTCMonitor *) inMonitor
+					didUpdateTicker: (QSBTCTicker *) inTicker;
+- (void)		monitor: (QSBTCMonitor *) inMonitor
+					connectionDidChange: (NSInteger) inConnectionState;
 
 @end
 
@@ -23,9 +31,11 @@
 
 + (QSBTCMonitor *)			sharedMonitor;
 
-- (void)					begingMonitoring;
+- (void)					toggleMonitor;
+- (void)					beginMonitoring;
 
 @property (nonatomic, weak) id <QSBTCMonitorDelegate>	delegate;
 @property (nonatomic, readonly) QSBTCTicker				*ticker;
+@property (nonatomic, readonly) NSInteger				connectionState;
 
 @end
