@@ -63,19 +63,6 @@
                         </items>
                     </menu>
                 </menuItem>
-                <menuItem title="File" id="eH5-dI-nS6">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                    <menu key="submenu" title="File" id="jTH-eT-46U">
-                        <items>
-                            <menuItem title="Connect" id="dbN-gQ-Ukw">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="handleConnectionToggle:" target="XUO-BD-F07" id="a62-1c-GtL"/>
-                                </connections>
-                            </menuItem>
-                        </items>
-                    </menu>
-                </menuItem>
                 <menuItem title="Window" id="19">
                     <menu key="submenu" title="Window" systemMenu="window" id="24">
                         <items>
@@ -102,190 +89,204 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="BTC Ticker (mtgox)" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="btc_main_window" animationBehavior="default" id="371">
-            <windowStyleMask key="styleMask" titled="YES"/>
-            <windowPositionMask key="initialPositionMask" rightStrut="YES" topStrut="YES"/>
-            <rect key="contentRect" x="1606" y="883" width="260" height="130"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
-            <view key="contentView" id="372" customClass="QSBTCBkgView">
-                <rect key="frame" x="0.0" y="0.0" width="260" height="130"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="F2W-YO-OEz">
-                        <rect key="frame" x="99" y="76" width="62" height="44"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" placeholderString="last" id="sQ3-Mc-jM0">
-                            <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="¤#,##0.00" negativeFormat="(¤#,##0.00)" numberStyle="currency" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="2" maximumFractionDigits="2" currencyCode="USD" currencySymbol="$" positivePrefix="$" negativePrefix="($" negativeSuffix=")" id="ko7-Jz-bFc">
-                                <real key="roundingIncrement" value="0.0"/>
-                                <metadata>
-                                    <bool key="localizesFormat" value="YES"/>
-                                </metadata>
-                            </numberFormatter>
-                            <font key="font" size="36" name="HelveticaNeue-Light"/>
-                            <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sEg-g5-jLj">
-                        <rect key="frame" x="94" y="40" width="74" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" placeholderString="disconnected" id="qba-Fo-Dpq">
-                            <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="¤#,##0.00" negativeFormat="(¤#,##0.00)" numberStyle="currency" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="2" maximumFractionDigits="2" currencyCode="USD" currencySymbol="$" positivePrefix="$" negativePrefix="($" negativeSuffix=")" id="aTk-BM-Fyl">
-                                <real key="roundingIncrement" value="0.0"/>
-                                <metadata>
-                                    <bool key="localizesFormat" value="YES"/>
-                                </metadata>
-                            </numberFormatter>
-                            <font key="font" size="12" name="HelveticaNeue-UltraLight"/>
-                            <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GSQ-Lj-0JI">
-                        <rect key="frame" x="109" y="58" width="43" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" placeholderString="volume" id="goU-Iz-X73">
-                            <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="#,##0.### BTC" negativeFormat="#,##0.### BTC" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="2" maximumFractionDigits="2" positiveSuffix=" BTC" negativeSuffix=" BTC" id="XBf-UL-Oug">
-                                <real key="roundingIncrement" value="0.0"/>
-                                <metadata>
-                                    <bool key="localizesFormat" value="YES"/>
-                                </metadata>
-                            </numberFormatter>
-                            <font key="font" size="12" name="HelveticaNeue-UltraLight"/>
-                            <color key="textColor" red="1" green="0.99997437" blue="0.99999129769999995" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                        </textFieldCell>
-                    </textField>
-                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="osP-V5-XFo">
-                        <rect key="frame" x="0.0" y="0.0" width="130" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fEf-VM-loW">
-                                <rect key="frame" x="17" y="5" width="28" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="buy" id="cXI-Ix-wJn">
-                                    <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="¤ #,##0.00" negativeFormat="¤ #,##0.00" numberStyle="currency" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="2" maximumFractionDigits="2" positivePrefix="¤ " negativePrefix="-¤ " id="5fl-pX-lFc">
-                                        <real key="roundingIncrement" value="0.0"/>
-                                        <metadata>
-                                            <bool key="localizesFormat" value="YES"/>
-                                        </metadata>
-                                    </numberFormatter>
-                                    <font key="font" size="16" name="HelveticaNeue-UltraLight"/>
-                                    <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5SH-Z8-QVt">
-                                <rect key="frame" x="47" y="5" width="30" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" placeholderString="buy" id="MDu-Ze-6Wp">
-                                    <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="¤ #,##0.00" negativeFormat="¤ #,##0.00" numberStyle="currency" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="2" maximumFractionDigits="2" currencyCode="USD" currencySymbol="$" positivePrefix="$ " negativePrefix="-$ " id="8f8-j6-22J">
-                                        <real key="roundingIncrement" value="0.0"/>
-                                        <metadata>
-                                            <bool key="localizesFormat" value="YES"/>
-                                        </metadata>
-                                    </numberFormatter>
-                                    <font key="font" size="16" name="HelveticaNeue-Light"/>
-                                    <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="fEf-VM-loW" secondAttribute="centerY" id="2JY-nz-dbO"/>
-                            <constraint firstItem="5SH-Z8-QVt" firstAttribute="leading" secondItem="fEf-VM-loW" secondAttribute="trailing" constant="8" symbolic="YES" id="DfH-gg-URG"/>
-                            <constraint firstAttribute="height" constant="32" id="HlH-0S-PkG"/>
-                            <constraint firstItem="fEf-VM-loW" firstAttribute="centerY" secondItem="5SH-Z8-QVt" secondAttribute="centerY" id="OfH-O9-tZB"/>
-                            <constraint firstItem="fEf-VM-loW" firstAttribute="leading" secondItem="osP-V5-XFo" secondAttribute="leading" constant="20" symbolic="YES" id="ptS-YH-HKO"/>
-                        </constraints>
-                    </customView>
-                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="RYa-qv-KHj">
-                        <rect key="frame" x="130" y="0.0" width="130" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qWG-ux-Y5F">
-                                <rect key="frame" x="17" y="4" width="24" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="sell" id="d1w-X1-tpr">
-                                    <numberFormatter key="formatter" formatterBehavior="default10_4" positiveFormat="¤ #,##0.00" negativeFormat="¤ #,##0.00" numberStyle="currency" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="2" maximumFractionDigits="2" positivePrefix="¤ " negativePrefix="-¤ " id="Tz9-xk-tNn">
-                                        <real key="roundingIncrement" value="0.0"/>
-                                        <metadata>
-                                            <bool key="localizesFormat" value="YES"/>
-                                        </metadata>
-                                    </numberFormatter>
-                                    <font key="font" size="16" name="HelveticaNeue-UltraLight"/>
-                                    <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cdq-Sr-SSi">
-                                <rect key="frame" x="43" y="4" width="26" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" placeholderString="sell" id="8yu-zH-u2t">
-                                    <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="¤ #,##0.00" negativeFormat="¤ #,##0.00" numberStyle="currency" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="2" maximumFractionDigits="2" currencyCode="USD" currencySymbol="$" positivePrefix="$ " negativePrefix="-$ " id="4Wx-0n-PY2">
-                                        <real key="roundingIncrement" value="0.0"/>
-                                        <metadata>
-                                            <bool key="localizesFormat" value="YES"/>
-                                        </metadata>
-                                    </numberFormatter>
-                                    <font key="font" size="16" name="HelveticaNeue-Light"/>
-                                    <color key="textColor" red="1" green="0.99997437000274658" blue="0.99999129772186279" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="cdq-Sr-SSi" firstAttribute="centerY" secondItem="qWG-ux-Y5F" secondAttribute="centerY" id="D7X-Ei-2f0"/>
-                            <constraint firstAttribute="height" constant="32" id="abK-JC-kCi"/>
-                            <constraint firstItem="cdq-Sr-SSi" firstAttribute="leading" secondItem="qWG-ux-Y5F" secondAttribute="trailing" constant="8" symbolic="YES" id="djW-yA-gmt"/>
-                            <constraint firstAttribute="centerY" secondItem="qWG-ux-Y5F" secondAttribute="centerY" id="tAj-N6-nHg"/>
-                            <constraint firstItem="qWG-ux-Y5F" firstAttribute="leading" secondItem="RYa-qv-KHj" secondAttribute="leading" constant="20" symbolic="YES" id="urO-UQ-mBJ"/>
-                        </constraints>
-                    </customView>
-                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="DvA-NB-8Ru" customClass="QSBTCStatusView">
-                        <rect key="frame" x="240" y="110" width="12" height="12"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="12" id="Ilb-CN-6M1"/>
-                            <constraint firstAttribute="height" constant="12" id="pnI-7Y-2Fc"/>
-                        </constraints>
-                    </customView>
-                </subviews>
-                <constraints>
-                    <constraint firstAttribute="centerX" secondItem="GSQ-Lj-0JI" secondAttribute="centerX" constant="-0.5" id="0Td-ed-vzK"/>
-                    <constraint firstAttribute="centerX" secondItem="sEg-g5-jLj" secondAttribute="centerX" constant="-0.5" id="2H3-1p-YYP"/>
-                    <constraint firstItem="DvA-NB-8Ru" firstAttribute="top" secondItem="372" secondAttribute="top" constant="8" id="2Lx-gk-n3h"/>
-                    <constraint firstItem="osP-V5-XFo" firstAttribute="top" secondItem="sEg-g5-jLj" secondAttribute="bottom" constant="8" symbolic="YES" id="9NP-6l-iR4"/>
-                    <constraint firstItem="RYa-qv-KHj" firstAttribute="top" secondItem="sEg-g5-jLj" secondAttribute="bottom" constant="8" symbolic="YES" id="BMk-Lt-dGq"/>
-                    <constraint firstItem="RYa-qv-KHj" firstAttribute="leading" secondItem="osP-V5-XFo" secondAttribute="trailing" id="Dbm-zO-Mjk"/>
-                    <constraint firstAttribute="centerX" secondItem="F2W-YO-OEz" secondAttribute="centerX" id="Fvk-mX-tlp"/>
-                    <constraint firstItem="GSQ-Lj-0JI" firstAttribute="top" secondItem="F2W-YO-OEz" secondAttribute="bottom" id="HLf-aS-7Mt"/>
-                    <constraint firstItem="osP-V5-XFo" firstAttribute="width" secondItem="RYa-qv-KHj" secondAttribute="width" id="QFE-8g-WDb"/>
-                    <constraint firstItem="sEg-g5-jLj" firstAttribute="top" secondItem="GSQ-Lj-0JI" secondAttribute="bottom" id="fiF-I8-tRf"/>
-                    <constraint firstAttribute="trailing" secondItem="DvA-NB-8Ru" secondAttribute="trailing" constant="8" id="fkd-FR-Zby"/>
-                    <constraint firstAttribute="trailing" secondItem="RYa-qv-KHj" secondAttribute="trailing" id="gEL-QJ-GNO"/>
-                    <constraint firstItem="F2W-YO-OEz" firstAttribute="top" secondItem="372" secondAttribute="top" constant="10" id="gif-Xh-awn"/>
-                    <constraint firstItem="osP-V5-XFo" firstAttribute="leading" secondItem="372" secondAttribute="leading" id="zPM-c0-5P9"/>
-                </constraints>
-            </view>
-        </window>
         <customObject id="494" customClass="QSAppDelegate">
             <connections>
-                <outlet property="controller" destination="XUO-BD-F07" id="S5s-Kb-PLR"/>
-                <outlet property="window" destination="371" id="532"/>
+                <outlet property="window" destination="h2Z-JF-cty" id="mds-QA-SrP"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
-        <customObject id="XUO-BD-F07" customClass="QSBTCTickerController">
+        <window title="BTC Ticker" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" frameAutosaveName="btc_ticker" animationBehavior="default" id="h2Z-JF-cty">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" topStrut="YES"/>
+            <rect key="contentRect" x="100" y="800" width="322" height="99"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" id="FrH-47-3kx">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView autohidesScrollers="YES" horizontalLineScroll="22" horizontalPageScroll="10" verticalLineScroll="22" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V20-f0-FlZ">
+                        <rect key="frame" x="-1" y="-1" width="324" height="101"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <clipView key="contentView" id="HA8-z5-GUz">
+                            <rect key="frame" x="1" y="17" width="322" height="83"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="none" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="20" headerView="fcC-8h-u72" id="PWb-5o-8pN">
+                                    <rect key="frame" x="0.0" y="0.0" width="322" height="83"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <size key="intercellSpacing" width="3" height="2"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                    <tableColumns>
+                                        <tableColumn width="16" minWidth="16" maxWidth="1000" id="e45-nl-Oda">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" id="mNg-Ih-kQN" customClass="QSBTCStatusCell">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <connections>
+                                                <binding destination="Eu7-Ku-lc2" name="value" keyPath="arrangedObjects.status" id="shD-jS-nEY"/>
+                                            </connections>
+                                        </tableColumn>
+                                        <tableColumn width="64" minWidth="40" maxWidth="1000" id="iga-Ju-ACP">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Service">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" allowsUndo="NO" alignment="left" title="Text Cell" id="PHq-47-SL1">
+                                                <font key="font" size="12" name="HelveticaNeue-Light"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="Eu7-Ku-lc2" name="value" keyPath="arrangedObjects.name" id="eXm-Zd-ffh"/>
+                                            </connections>
+                                        </tableColumn>
+                                        <tableColumn identifier="update" width="32" minWidth="10" maxWidth="3.4028234663852886e+38" id="daE-YA-uch">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" allowsUndo="NO" alignment="left" title="Text Cell" id="feC-5m-f3X">
+                                                <font key="font" size="12" name="HelveticaNeue-Light"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="Eu7-Ku-lc2" name="value" keyPath="arrangedObjects.ticker.timestamp" id="WVi-Jp-pRa">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">QSBTCRelativeTime_Transformer</string>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </tableColumn>
+                                        <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="PHA-Xj-Jgm">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Last">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" allowsUndo="NO" alignment="left" title="0000.00000" id="wTL-Te-mgN">
+                                                <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="¤#,##0.00" negativeFormat="(¤#,##0.00)" numberStyle="currency" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="2" maximumFractionDigits="2" currencyCode="USD" currencySymbol="$" positivePrefix="$" negativePrefix="($" negativeSuffix=")" id="j7S-YP-rYd">
+                                                    <real key="roundingIncrement" value="0.0"/>
+                                                    <metadata>
+                                                        <bool key="localizesFormat" value="YES"/>
+                                                    </metadata>
+                                                </numberFormatter>
+                                                <font key="font" size="12" name="HelveticaNeue-Light"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="Eu7-Ku-lc2" name="textColor" keyPath="arrangedObjects.ticker.lastChange" id="UNE-ac-wXK">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">QSBTCChangeColor_Transformer</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <binding destination="Eu7-Ku-lc2" name="value" keyPath="arrangedObjects.ticker.last" id="cRc-H5-Et8"/>
+                                            </connections>
+                                        </tableColumn>
+                                        <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="dMB-0R-jGk">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Bid">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" allowsUndo="NO" alignment="left" title="0000.00000" id="oCU-ci-Tqh">
+                                                <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="¤#,##0.00" negativeFormat="(¤#,##0.00)" numberStyle="currency" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="2" maximumFractionDigits="2" currencyCode="USD" currencySymbol="$" positivePrefix="$" negativePrefix="($" negativeSuffix=")" id="mN5-k4-m1B">
+                                                    <real key="roundingIncrement" value="0.0"/>
+                                                    <metadata>
+                                                        <bool key="localizesFormat" value="YES"/>
+                                                    </metadata>
+                                                </numberFormatter>
+                                                <font key="font" size="12" name="HelveticaNeue-Light"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="Eu7-Ku-lc2" name="textColor" keyPath="arrangedObjects.ticker.bidChange" id="4dX-sL-MrG">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">QSBTCChangeColor_Transformer</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <binding destination="Eu7-Ku-lc2" name="value" keyPath="arrangedObjects.ticker.bid" id="kqR-lF-6qL"/>
+                                            </connections>
+                                        </tableColumn>
+                                        <tableColumn width="64" minWidth="10" maxWidth="3.4028234663852886e+38" id="LvS-hK-oCS">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Ask">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" allowsUndo="NO" alignment="left" title="0000.00000" id="6o6-NN-CC4">
+                                                <numberFormatter key="formatter" formatterBehavior="custom10_4" positiveFormat="¤#,##0.00" negativeFormat="(¤#,##0.00)" numberStyle="currency" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="2" maximumFractionDigits="2" currencyCode="USD" currencySymbol="$" positivePrefix="$" negativePrefix="($" negativeSuffix=")" id="x6u-po-pbI">
+                                                    <real key="roundingIncrement" value="0.0"/>
+                                                    <metadata>
+                                                        <bool key="localizesFormat" value="YES"/>
+                                                    </metadata>
+                                                </numberFormatter>
+                                                <font key="font" size="12" name="HelveticaNeue-Light"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="Eu7-Ku-lc2" name="textColor" keyPath="arrangedObjects.ticker.askChange" id="LyE-ec-FOa">
+                                                    <dictionary key="options">
+                                                        <string key="NSValueTransformerName">QSBTCChangeColor_Transformer</string>
+                                                    </dictionary>
+                                                </binding>
+                                                <binding destination="Eu7-Ku-lc2" name="value" keyPath="arrangedObjects.ticker.ask" id="fri-vD-SeC"/>
+                                            </connections>
+                                        </tableColumn>
+                                    </tableColumns>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="ICW-KE-BcP">
+                            <rect key="frame" x="1" y="83" width="320" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="zNS-Fw-IP6">
+                            <rect key="frame" x="224" y="17" width="15" height="102"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <tableHeaderView key="headerView" id="fcC-8h-u72">
+                            <rect key="frame" x="0.0" y="0.0" width="322" height="17"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </tableHeaderView>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="V20-f0-FlZ" firstAttribute="leading" secondItem="FrH-47-3kx" secondAttribute="leading" constant="-1" id="6zZ-9Z-wUh"/>
+                    <constraint firstItem="V20-f0-FlZ" firstAttribute="top" secondItem="FrH-47-3kx" secondAttribute="top" constant="-1" id="Ahh-Mm-jxG"/>
+                    <constraint firstAttribute="trailing" secondItem="V20-f0-FlZ" secondAttribute="trailing" constant="-1" id="K8g-VC-bbn"/>
+                    <constraint firstAttribute="bottom" secondItem="V20-f0-FlZ" secondAttribute="bottom" constant="-1" id="jZA-rq-ReV"/>
+                </constraints>
+            </view>
+        </window>
+        <customObject id="fL6-r9-1mC" userLabel="Ticker Manager" customClass="QSBTCManager">
             <connections>
-                <outlet property="btcVolume" destination="GSQ-Lj-0JI" id="wXg-85-JGV"/>
-                <outlet property="buyPrice" destination="5SH-Z8-QVt" id="wNk-56-Px3"/>
-                <outlet property="connectItem" destination="dbN-gQ-Ukw" id="2DF-W3-MPp"/>
-                <outlet property="lastPrice" destination="F2W-YO-OEz" id="RTl-6Y-yEo"/>
-                <outlet property="sellPrice" destination="cdq-Sr-SSi" id="Im8-3v-5Mj"/>
-                <outlet property="status" destination="sEg-g5-jLj" id="IaY-uH-ksY"/>
-                <outlet property="statusView" destination="DvA-NB-8Ru" id="X8V-rA-a86"/>
+                <outlet property="tickerController" destination="Eu7-Ku-lc2" id="i35-Xa-c1N"/>
             </connections>
         </customObject>
+        <arrayController mode="entity" entityName="Service" automaticallyPreparesContent="YES" automaticallyRearrangesObjects="YES" id="Eu7-Ku-lc2" userLabel="Ticker Controller" customClass="QSBTCTickerController">
+            <connections>
+                <binding destination="fL6-r9-1mC" name="managedObjectContext" keyPath="defaultContext" id="7YA-ZU-qSV"/>
+                <outlet property="tickerTable" destination="PWb-5o-8pN" id="ZKX-5U-NLL"/>
+            </connections>
+        </arrayController>
     </objects>
 </document>

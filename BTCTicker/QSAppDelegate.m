@@ -7,15 +7,11 @@
 //
 
 #import "QSAppDelegate.h"
-#import "QSBTCMonitor.h"
-#import "QSBTCTickerController.h"
 
 @implementation QSAppDelegate
 
 - (void) applicationDidFinishLaunching: (NSNotification *) inNotification
 {
-	[QSBTCMonitor sharedMonitor].delegate = self.controller;
-	[[QSBTCMonitor sharedMonitor] beginMonitoring];
 }
 
 @end

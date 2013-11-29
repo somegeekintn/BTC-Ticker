@@ -1,5 +1,5 @@
 //
-//  QSBTCTickerController.h
+//  QSBTCStatusCell.h
 //  BTCTicker
 //
 //  Created by Casey Fleser on 11/29/13.
@@ -8,8 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface QSBTCTickerController : NSArrayController
-
-@property (nonatomic, strong) IBOutlet NSTableView		*tickerTable;
+@interface QSBTCStatusCell : NSTextFieldCell
 
 @end

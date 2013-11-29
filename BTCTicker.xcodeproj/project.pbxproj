@@ -8,7 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		C957805C184166B0007988A5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C957805B184166B0007988A5 /* README.md */; };
-		C957805F184175E7007988A5 /* QSBTCStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = C957805E184175E7007988A5 /* QSBTCStatusView.m */; };
+		C97FA2941848A6220024ABEC /* QSBTCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2931848A6220024ABEC /* QSBTCManager.m */; };
+		C97FA29A1848A6430024ABEC /* QSBTCModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2981848A6430024ABEC /* QSBTCModel.xcdatamodeld */; };
+		C97FA2AC1848BE7E0024ABEC /* QSBTCService.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2AB1848BE7E0024ABEC /* QSBTCService.m */; };
+		C97FA2AF1848BE7E0024ABEC /* QSBTCTicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2AE1848BE7E0024ABEC /* QSBTCTicker.m */; };
+		C97FA2B21848C19E0024ABEC /* QSBTCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2B11848C19E0024ABEC /* QSBTCConnection.m */; };
+		C97FA2B61848C32D0024ABEC /* QSBTCConnection_Mtgox.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2B51848C32D0024ABEC /* QSBTCConnection_Mtgox.m */; };
+		C97FA2BD1848C96F0024ABEC /* QSBTCRelativeTime_Transformer.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2BC1848C96F0024ABEC /* QSBTCRelativeTime_Transformer.m */; };
+		C97FA2C01848D1810024ABEC /* QSBTCConnection_Coinbase.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2BF1848D1810024ABEC /* QSBTCConnection_Coinbase.m */; };
+		C97FA2D71848D6CA0024ABEC /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2C51848D6CA0024ABEC /* AFHTTPRequestOperation.m */; };
+		C97FA2D81848D6CA0024ABEC /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2C71848D6CA0024ABEC /* AFHTTPRequestOperationManager.m */; };
+		C97FA2D91848D6CA0024ABEC /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2C91848D6CA0024ABEC /* AFHTTPSessionManager.m */; };
+		C97FA2DA1848D6CA0024ABEC /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2CC1848D6CA0024ABEC /* AFNetworkReachabilityManager.m */; };
+		C97FA2DB1848D6CA0024ABEC /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2CE1848D6CA0024ABEC /* AFSecurityPolicy.m */; };
+		C97FA2DC1848D6CA0024ABEC /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2D01848D6CA0024ABEC /* AFURLConnectionOperation.m */; };
+		C97FA2DD1848D6CA0024ABEC /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2D21848D6CA0024ABEC /* AFURLRequestSerialization.m */; };
+		C97FA2DE1848D6CA0024ABEC /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2D41848D6CA0024ABEC /* AFURLResponseSerialization.m */; };
+		C97FA2DF1848D6CA0024ABEC /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2D61848D6CA0024ABEC /* AFURLSessionManager.m */; };
+		C97FA2E11848D7200024ABEC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97FA2E01848D7200024ABEC /* SystemConfiguration.framework */; };
+		C97FA2E31848D7310024ABEC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97FA2E21848D7310024ABEC /* Security.framework */; };
+		C97FA2E61848DBEC0024ABEC /* QSBTCConnection_Bitstamp.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2E51848DBEC0024ABEC /* QSBTCConnection_Bitstamp.m */; };
+		C97FA2EA1848EE230024ABEC /* QSBTCTickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2E91848EE230024ABEC /* QSBTCTickerController.m */; };
+		C97FA2ED1848F4170024ABEC /* QSBTCChangeColor_Transformer.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2EC1848F4170024ABEC /* QSBTCChangeColor_Transformer.m */; };
+		C97FA2F0184902850024ABEC /* QSBTCStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2EF184902850024ABEC /* QSBTCStatusCell.m */; };
+		C97FA2F318490ADD0024ABEC /* QSBTCConnection_BTCe.m in Sources */ = {isa = PBXBuildFile; fileRef = C97FA2F218490ADD0024ABEC /* QSBTCConnection_BTCe.m */; };
 		C9862D221840FD5700811FC2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9862D211840FD5700811FC2 /* Cocoa.framework */; };
 		C9862D2C1840FD5700811FC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9862D2A1840FD5700811FC2 /* InfoPlist.strings */; };
 		C9862D2E1840FD5700811FC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D2D1840FD5700811FC2 /* main.m */; };
@@ -17,12 +40,6 @@
 		C9862D381840FD5700811FC2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9862D361840FD5700811FC2 /* MainMenu.xib */; };
 		C9862D3A1840FD5700811FC2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9862D391840FD5700811FC2 /* Images.xcassets */; };
 		C9862D671840FE4000811FC2 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9862D601840FE2000811FC2 /* SocketRocket.framework */; };
-		C9862D6E1841026A00811FC2 /* QSBTCMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D6D1841026A00811FC2 /* QSBTCMonitor.m */; };
-		C9862D711841032D00811FC2 /* QSBTCConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D701841032D00811FC2 /* QSBTCConsts.m */; };
-		C9862D74184108F000811FC2 /* QSBTCTicker.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D73184108F000811FC2 /* QSBTCTicker.m */; };
-		C9862D771841090600811FC2 /* QSBTCTickerValue.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D761841090600811FC2 /* QSBTCTickerValue.m */; };
-		C9862D7E184129B200811FC2 /* QSBTCTickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D7D184129B200811FC2 /* QSBTCTickerController.m */; };
-		C9862D8E18415F5900811FC2 /* QSBTCBkgView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9862D8D18415F5900811FC2 /* QSBTCBkgView.m */; };
 		C9CA71B718418856001E2D15 /* SocketRocket.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C9862D601840FE2000811FC2 /* SocketRocket.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,8 +96,52 @@
 
 /* Begin PBXFileReference section */
 		C957805B184166B0007988A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		C957805D184175E7007988A5 /* QSBTCStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCStatusView.h; sourceTree = "<group>"; };
-		C957805E184175E7007988A5 /* QSBTCStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCStatusView.m; sourceTree = "<group>"; };
+		C97FA2921848A6220024ABEC /* QSBTCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCManager.h; sourceTree = "<group>"; };
+		C97FA2931848A6220024ABEC /* QSBTCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCManager.m; sourceTree = "<group>"; };
+		C97FA2991848A6430024ABEC /* QSBTCModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QSBTCModel.xcdatamodel; sourceTree = "<group>"; };
+		C97FA2AA1848BE7E0024ABEC /* QSBTCService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCService.h; sourceTree = "<group>"; };
+		C97FA2AB1848BE7E0024ABEC /* QSBTCService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCService.m; sourceTree = "<group>"; };
+		C97FA2AD1848BE7E0024ABEC /* QSBTCTicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCTicker.h; sourceTree = "<group>"; };
+		C97FA2AE1848BE7E0024ABEC /* QSBTCTicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCTicker.m; sourceTree = "<group>"; };
+		C97FA2B01848C19E0024ABEC /* QSBTCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCConnection.h; sourceTree = "<group>"; };
+		C97FA2B11848C19E0024ABEC /* QSBTCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCConnection.m; sourceTree = "<group>"; };
+		C97FA2B41848C32D0024ABEC /* QSBTCConnection_Mtgox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCConnection_Mtgox.h; sourceTree = "<group>"; };
+		C97FA2B51848C32D0024ABEC /* QSBTCConnection_Mtgox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCConnection_Mtgox.m; sourceTree = "<group>"; };
+		C97FA2BB1848C96F0024ABEC /* QSBTCRelativeTime_Transformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCRelativeTime_Transformer.h; sourceTree = "<group>"; };
+		C97FA2BC1848C96F0024ABEC /* QSBTCRelativeTime_Transformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCRelativeTime_Transformer.m; sourceTree = "<group>"; };
+		C97FA2BE1848D1810024ABEC /* QSBTCConnection_Coinbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCConnection_Coinbase.h; sourceTree = "<group>"; };
+		C97FA2BF1848D1810024ABEC /* QSBTCConnection_Coinbase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCConnection_Coinbase.m; sourceTree = "<group>"; };
+		C97FA2C41848D6CA0024ABEC /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		C97FA2C51848D6CA0024ABEC /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		C97FA2C61848D6CA0024ABEC /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		C97FA2C71848D6CA0024ABEC /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		C97FA2C81848D6CA0024ABEC /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		C97FA2C91848D6CA0024ABEC /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		C97FA2CA1848D6CA0024ABEC /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		C97FA2CB1848D6CA0024ABEC /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		C97FA2CC1848D6CA0024ABEC /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		C97FA2CD1848D6CA0024ABEC /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		C97FA2CE1848D6CA0024ABEC /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		C97FA2CF1848D6CA0024ABEC /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		C97FA2D01848D6CA0024ABEC /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		C97FA2D11848D6CA0024ABEC /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		C97FA2D21848D6CA0024ABEC /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		C97FA2D31848D6CA0024ABEC /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		C97FA2D41848D6CA0024ABEC /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		C97FA2D51848D6CA0024ABEC /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		C97FA2D61848D6CA0024ABEC /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		C97FA2E01848D7200024ABEC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C97FA2E21848D7310024ABEC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C97FA2E41848DBEC0024ABEC /* QSBTCConnection_Bitstamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCConnection_Bitstamp.h; sourceTree = "<group>"; };
+		C97FA2E51848DBEC0024ABEC /* QSBTCConnection_Bitstamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCConnection_Bitstamp.m; sourceTree = "<group>"; };
+		C97FA2E81848EE230024ABEC /* QSBTCTickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCTickerController.h; sourceTree = "<group>"; };
+		C97FA2E91848EE230024ABEC /* QSBTCTickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCTickerController.m; sourceTree = "<group>"; };
+		C97FA2EB1848F4170024ABEC /* QSBTCChangeColor_Transformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCChangeColor_Transformer.h; sourceTree = "<group>"; };
+		C97FA2EC1848F4170024ABEC /* QSBTCChangeColor_Transformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCChangeColor_Transformer.m; sourceTree = "<group>"; };
+		C97FA2EE184902850024ABEC /* QSBTCStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCStatusCell.h; sourceTree = "<group>"; };
+		C97FA2EF184902850024ABEC /* QSBTCStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCStatusCell.m; sourceTree = "<group>"; };
+		C97FA2F118490ADD0024ABEC /* QSBTCConnection_BTCe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCConnection_BTCe.h; sourceTree = "<group>"; };
+		C97FA2F218490ADD0024ABEC /* QSBTCConnection_BTCe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCConnection_BTCe.m; sourceTree = "<group>"; };
 		C9862D1E1840FD5700811FC2 /* BTC Ticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BTC Ticker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9862D211840FD5700811FC2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C9862D241840FD5700811FC2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -96,18 +157,6 @@
 		C9862D371840FD5700811FC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C9862D391840FD5700811FC2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C9862D561840FE2000811FC2 /* SocketRocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SocketRocket.xcodeproj; path = SocketRocket/SocketRocket.xcodeproj; sourceTree = "<group>"; };
-		C9862D6C1841026A00811FC2 /* QSBTCMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCMonitor.h; sourceTree = "<group>"; };
-		C9862D6D1841026A00811FC2 /* QSBTCMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCMonitor.m; sourceTree = "<group>"; };
-		C9862D6F1841032D00811FC2 /* QSBTCConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCConsts.h; sourceTree = "<group>"; };
-		C9862D701841032D00811FC2 /* QSBTCConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCConsts.m; sourceTree = "<group>"; };
-		C9862D72184108F000811FC2 /* QSBTCTicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCTicker.h; sourceTree = "<group>"; };
-		C9862D73184108F000811FC2 /* QSBTCTicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCTicker.m; sourceTree = "<group>"; };
-		C9862D751841090600811FC2 /* QSBTCTickerValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCTickerValue.h; sourceTree = "<group>"; };
-		C9862D761841090600811FC2 /* QSBTCTickerValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCTickerValue.m; sourceTree = "<group>"; };
-		C9862D7C184129B200811FC2 /* QSBTCTickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCTickerController.h; sourceTree = "<group>"; };
-		C9862D7D184129B200811FC2 /* QSBTCTickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCTickerController.m; sourceTree = "<group>"; };
-		C9862D8C18415F5900811FC2 /* QSBTCBkgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSBTCBkgView.h; sourceTree = "<group>"; };
-		C9862D8D18415F5900811FC2 /* QSBTCBkgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSBTCBkgView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +164,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97FA2E31848D7310024ABEC /* Security.framework in Frameworks */,
+				C97FA2E11848D7200024ABEC /* SystemConfiguration.framework in Frameworks */,
 				C9862D221840FD5700811FC2 /* Cocoa.framework in Frameworks */,
 				C9862D671840FE4000811FC2 /* SocketRocket.framework in Frameworks */,
 			);
@@ -123,6 +174,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C97FA2B31848C2B20024ABEC /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				C97FA2B01848C19E0024ABEC /* QSBTCConnection.h */,
+				C97FA2B11848C19E0024ABEC /* QSBTCConnection.m */,
+				C97FA2E41848DBEC0024ABEC /* QSBTCConnection_Bitstamp.h */,
+				C97FA2E51848DBEC0024ABEC /* QSBTCConnection_Bitstamp.m */,
+				C97FA2F118490ADD0024ABEC /* QSBTCConnection_BTCe.h */,
+				C97FA2F218490ADD0024ABEC /* QSBTCConnection_BTCe.m */,
+				C97FA2BE1848D1810024ABEC /* QSBTCConnection_Coinbase.h */,
+				C97FA2BF1848D1810024ABEC /* QSBTCConnection_Coinbase.m */,
+				C97FA2B41848C32D0024ABEC /* QSBTCConnection_Mtgox.h */,
+				C97FA2B51848C32D0024ABEC /* QSBTCConnection_Mtgox.m */,
+			);
+			name = Connections;
+			path = connections;
+			sourceTree = "<group>";
+		};
+		C97FA2BA1848C9540024ABEC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C97FA2BB1848C96F0024ABEC /* QSBTCRelativeTime_Transformer.h */,
+				C97FA2BC1848C96F0024ABEC /* QSBTCRelativeTime_Transformer.m */,
+				C97FA2EB1848F4170024ABEC /* QSBTCChangeColor_Transformer.h */,
+				C97FA2EC1848F4170024ABEC /* QSBTCChangeColor_Transformer.m */,
+			);
+			name = Classes;
+			path = classes;
+			sourceTree = "<group>";
+		};
+		C97FA2C31848D6CA0024ABEC /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				C97FA2C41848D6CA0024ABEC /* AFHTTPRequestOperation.h */,
+				C97FA2C51848D6CA0024ABEC /* AFHTTPRequestOperation.m */,
+				C97FA2C61848D6CA0024ABEC /* AFHTTPRequestOperationManager.h */,
+				C97FA2C71848D6CA0024ABEC /* AFHTTPRequestOperationManager.m */,
+				C97FA2C81848D6CA0024ABEC /* AFHTTPSessionManager.h */,
+				C97FA2C91848D6CA0024ABEC /* AFHTTPSessionManager.m */,
+				C97FA2CA1848D6CA0024ABEC /* AFNetworking.h */,
+				C97FA2CB1848D6CA0024ABEC /* AFNetworkReachabilityManager.h */,
+				C97FA2CC1848D6CA0024ABEC /* AFNetworkReachabilityManager.m */,
+				C97FA2CD1848D6CA0024ABEC /* AFSecurityPolicy.h */,
+				C97FA2CE1848D6CA0024ABEC /* AFSecurityPolicy.m */,
+				C97FA2CF1848D6CA0024ABEC /* AFURLConnectionOperation.h */,
+				C97FA2D01848D6CA0024ABEC /* AFURLConnectionOperation.m */,
+				C97FA2D11848D6CA0024ABEC /* AFURLRequestSerialization.h */,
+				C97FA2D21848D6CA0024ABEC /* AFURLRequestSerialization.m */,
+				C97FA2D31848D6CA0024ABEC /* AFURLResponseSerialization.h */,
+				C97FA2D41848D6CA0024ABEC /* AFURLResponseSerialization.m */,
+				C97FA2D51848D6CA0024ABEC /* AFURLSessionManager.h */,
+				C97FA2D61848D6CA0024ABEC /* AFURLSessionManager.m */,
+			);
+			name = AFNetworking;
+			path = AFNetworking/AFNetworking;
+			sourceTree = "<group>";
+		};
+		C97FA2E71848EDFD0024ABEC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C97FA2E81848EE230024ABEC /* QSBTCTickerController.h */,
+				C97FA2E91848EE230024ABEC /* QSBTCTickerController.m */,
+			);
+			name = Controllers;
+			path = controllers;
+			sourceTree = "<group>";
+		};
 		C9862D151840FD5700811FC2 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +263,8 @@
 		C9862D201840FD5700811FC2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C97FA2E21848D7310024ABEC /* Security.framework */,
+				C97FA2E01848D7200024ABEC /* SystemConfiguration.framework */,
 				C9862D211840FD5700811FC2 /* Cocoa.framework */,
 				C9862D231840FD5700811FC2 /* Other Frameworks */,
 			);
@@ -168,12 +288,12 @@
 				C9862D341840FD5700811FC2 /* QSAppDelegate.m */,
 				C9862D361840FD5700811FC2 /* MainMenu.xib */,
 				C9862D391840FD5700811FC2 /* Images.xcassets */,
-				C9862D781841290C00811FC2 /* Controllers */,
+				C97FA2BA1848C9540024ABEC /* Classes */,
+				C97FA2B31848C2B20024ABEC /* Connections */,
+				C97FA2E71848EDFD0024ABEC /* Controllers */,
 				C9862D6B1841021C00811FC2 /* Model */,
 				C9862D281840FD5700811FC2 /* Supporting Files */,
 				C9862D891841566100811FC2 /* UI */,
-				C9862D6F1841032D00811FC2 /* QSBTCConsts.h */,
-				C9862D701841032D00811FC2 /* QSBTCConsts.m */,
 			);
 			path = BTCTicker;
 			sourceTree = "<group>";
@@ -193,6 +313,7 @@
 		C9862D551840FDFE00811FC2 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				C97FA2C31848D6CA0024ABEC /* AFNetworking */,
 				C9862D561840FE2000811FC2 /* SocketRocket.xcodeproj */,
 			);
 			name = External;
@@ -213,34 +334,23 @@
 		C9862D6B1841021C00811FC2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C9862D6C1841026A00811FC2 /* QSBTCMonitor.h */,
-				C9862D6D1841026A00811FC2 /* QSBTCMonitor.m */,
-				C9862D72184108F000811FC2 /* QSBTCTicker.h */,
-				C9862D73184108F000811FC2 /* QSBTCTicker.m */,
-				C9862D751841090600811FC2 /* QSBTCTickerValue.h */,
-				C9862D761841090600811FC2 /* QSBTCTickerValue.m */,
+				C97FA2981848A6430024ABEC /* QSBTCModel.xcdatamodeld */,
+				C97FA2921848A6220024ABEC /* QSBTCManager.h */,
+				C97FA2931848A6220024ABEC /* QSBTCManager.m */,
+				C97FA2AA1848BE7E0024ABEC /* QSBTCService.h */,
+				C97FA2AB1848BE7E0024ABEC /* QSBTCService.m */,
+				C97FA2AD1848BE7E0024ABEC /* QSBTCTicker.h */,
+				C97FA2AE1848BE7E0024ABEC /* QSBTCTicker.m */,
 			);
 			name = Model;
 			path = models;
 			sourceTree = "<group>";
 		};
-		C9862D781841290C00811FC2 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				C9862D7C184129B200811FC2 /* QSBTCTickerController.h */,
-				C9862D7D184129B200811FC2 /* QSBTCTickerController.m */,
-			);
-			name = Controllers;
-			path = controllers;
-			sourceTree = "<group>";
-		};
 		C9862D891841566100811FC2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				C9862D8C18415F5900811FC2 /* QSBTCBkgView.h */,
-				C9862D8D18415F5900811FC2 /* QSBTCBkgView.m */,
-				C957805D184175E7007988A5 /* QSBTCStatusView.h */,
-				C957805E184175E7007988A5 /* QSBTCStatusView.m */,
+				C97FA2EE184902850024ABEC /* QSBTCStatusCell.h */,
+				C97FA2EF184902850024ABEC /* QSBTCStatusCell.m */,
 			);
 			name = UI;
 			path = ui;
@@ -353,15 +463,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9862D6E1841026A00811FC2 /* QSBTCMonitor.m in Sources */,
-				C9862D771841090600811FC2 /* QSBTCTickerValue.m in Sources */,
-				C9862D74184108F000811FC2 /* QSBTCTicker.m in Sources */,
-				C957805F184175E7007988A5 /* QSBTCStatusView.m in Sources */,
+				C97FA2B61848C32D0024ABEC /* QSBTCConnection_Mtgox.m in Sources */,
+				C97FA2AF1848BE7E0024ABEC /* QSBTCTicker.m in Sources */,
+				C97FA2D81848D6CA0024ABEC /* AFHTTPRequestOperationManager.m in Sources */,
+				C97FA2F318490ADD0024ABEC /* QSBTCConnection_BTCe.m in Sources */,
+				C97FA2C01848D1810024ABEC /* QSBTCConnection_Coinbase.m in Sources */,
+				C97FA2DC1848D6CA0024ABEC /* AFURLConnectionOperation.m in Sources */,
+				C97FA2BD1848C96F0024ABEC /* QSBTCRelativeTime_Transformer.m in Sources */,
+				C97FA2AC1848BE7E0024ABEC /* QSBTCService.m in Sources */,
+				C97FA2EA1848EE230024ABEC /* QSBTCTickerController.m in Sources */,
+				C97FA2DD1848D6CA0024ABEC /* AFURLRequestSerialization.m in Sources */,
+				C97FA2D91848D6CA0024ABEC /* AFHTTPSessionManager.m in Sources */,
+				C97FA2D71848D6CA0024ABEC /* AFHTTPRequestOperation.m in Sources */,
 				C9862D351840FD5700811FC2 /* QSAppDelegate.m in Sources */,
+				C97FA2ED1848F4170024ABEC /* QSBTCChangeColor_Transformer.m in Sources */,
+				C97FA2DB1848D6CA0024ABEC /* AFSecurityPolicy.m in Sources */,
 				C9862D2E1840FD5700811FC2 /* main.m in Sources */,
-				C9862D8E18415F5900811FC2 /* QSBTCBkgView.m in Sources */,
-				C9862D7E184129B200811FC2 /* QSBTCTickerController.m in Sources */,
-				C9862D711841032D00811FC2 /* QSBTCConsts.m in Sources */,
+				C97FA2DA1848D6CA0024ABEC /* AFNetworkReachabilityManager.m in Sources */,
+				C97FA2DF1848D6CA0024ABEC /* AFURLSessionManager.m in Sources */,
+				C97FA2E61848DBEC0024ABEC /* QSBTCConnection_Bitstamp.m in Sources */,
+				C97FA2B21848C19E0024ABEC /* QSBTCConnection.m in Sources */,
+				C97FA29A1848A6430024ABEC /* QSBTCModel.xcdatamodeld in Sources */,
+				C97FA2F0184902850024ABEC /* QSBTCStatusCell.m in Sources */,
+				C97FA2DE1848D6CA0024ABEC /* AFURLResponseSerialization.m in Sources */,
+				C97FA2941848A6220024ABEC /* QSBTCManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +644,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C97FA2981848A6430024ABEC /* QSBTCModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C97FA2991848A6430024ABEC /* QSBTCModel.xcdatamodel */,
+			);
+			currentVersion = C97FA2991848A6430024ABEC /* QSBTCModel.xcdatamodel */;
+			path = QSBTCModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C9862D161840FD5700811FC2 /* Project object */;
 }

@@ -1,3 +1,6 @@
 [submodule "BTCTicker/external/SocketRocket"]
 	path = BTCTicker/external/SocketRocket
 	url = git@github.com:square/SocketRocket.git
+[submodule "BTCTicker/external/AFNetworking"]
+	path = BTCTicker/external/AFNetworking
+	url = git@github.com:AFNetworking/AFNetworking.git
